@@ -1,0 +1,255 @@
+/* google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*shared style*/
+.hide {
+    display: none;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+
+}
+.margin-all{
+    padding: 60px 120px;
+}
+.btn {
+    padding: 15px 20px;
+    background-color: #E02C6D;
+    color: #fff;
+    border: #E02C6D;
+    border-radius: 40px;
+    font-weight: 700;
+    cursor: pointer;
+}
+button.btn i {
+    margin: 0px;
+    padding-left: 5px;
+}
+
+/* nav bar style  */
+
+nav {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav h2 {
+    color: #3A3A3A;
+}
+.meno-items ul {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.meno-items ul > li, i {
+    margin-right: 20px;
+    list-style: none;
+}
+.meno-items a {
+    color: #3A3A3A;
+    text-decoration: none;
+}
+/* hero section */
+.hero-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero-info h1 {
+    font-size: 3rem;
+}
+.hero-info p {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.hero-img {
+    background-image: url('../images/Circle\ design.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-img img {
+    width: 100%;
+}
+/* logo style */
+.logo-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* service style */
+.service-title {
+    text-align: center;
+}
+.service-title h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.service-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.service-box {
+    padding: 15px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.service-box img {
+    width: 100%;
+}
+.service-box h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.service-box h5 {
+    font-size: 1.2rem;
+
+}
+.service-box i {
+    font-size: .8rem;
+    color: #FB8200;
+    margin-right: 0px;
+}
+.service-box p {
+    font-size: .8rem;
+    font-weight: 700;
+}
+/* feature style */
+.feature-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 60px;
+}
+.feature-container h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.feature-container p{
+    margin-bottom: 15px;
+}
+.feature-img img {
+    width: 100%;
+}
+.feature-btn {
+    border-radius: 2px;
+}
+/* footer style */
+footer {
+    background-color: #0A0826;
+    color: #fff;
+}
+.footer-title {
+    text-align: center;
+}
+.footer-title p {
+    color: #D9DBE1;
+    font-size: .8rem;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+/* responsive style here */
+
+@media screen and (max-width: 576px) {
+    nav,
+    .meno-items ul,
+    .hero-container,
+    .service-container {
+       flex-direction: column;
+    }
+    .hero-container,
+    .feature-container {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .margin-all {
+        padding: 20px;
+    }
+    nav {
+        padding-top: 15px;
+    }
+    nav h2 {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .meno-items ul > li, i {
+        margin-right: 0px;
+    }
+    .meno-items ul > i {
+        margin: 5px 0px;
+    }
+    .meno-items ul > li a {
+        font-size: .8rem;
+    }
+    .logo-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+    .meno-items {
+        margin-top: 10px;
+    }
+    .logo-container img  {
+       width: 100%;
+    }
+    .hero-info {
+        text-align: center;
+    }
+    .hero-info h1 {
+        font-size: 1rem;
+    }
+    .hero-info p {
+        font-size: .7rem;
+        margin-top: 10px;
+    }
+    .btn {
+        font-size: .7rem;
+        padding: 10px 12px;
+    }
+    .service-title h3,
+    .feature-container h2 {
+        font-size: .8rem;
+    }
+    .service-box h3 {
+        font-size: .7rem;
+    }
+    .service-box h5 {
+        font-size: .6rem;
+    }
+    .service-box i {
+        font-size: .5rem;
+    }
+    .service-box p {
+        font-size: .6rem;
+    }
+    .feature-info {
+        text-align: center;
+    }
+    .feature-container p {
+        font-size: .5rem;
+        margin-top: 10px;
+    }
+    .footer-title h2 {
+        font-size: .8rem;
+    }
+    .footer-title p {
+        font-size: .5rem;
+        margin-bottom: 5px;
+    }
+    .social-icons i {
+        margin: 0px;
+        font-size: .6rem;
+    }
+}
